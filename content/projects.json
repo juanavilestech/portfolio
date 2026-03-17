@@ -1,0 +1,48 @@
+[
+  {
+    "id": "control-it",
+    "name": "Control IT",
+    "description": "IT Service Management System. Features a real-time dashboard, inventory control, and user authentication.",
+    "tech": ["React", "Node.js", "Express", "Prisma ORM", "SQLite"],
+    "github": "https://github.com/juanavilestech/Control-IT",
+    "demo": "https://control-it.vercel.app",
+    "image": "https://raw.githubusercontent.com/juanavilestech/Control-IT/main/screenshot.png"
+  },
+  {
+    "id": "tecno-reparaciones",
+    "name": "TECNO Reparaciones",
+    "description": "Electronics Repair App. Manages repairs for devices (phones, PCs, notebooks). Includes registration, filtering, and CRUD operations.",
+    "tech": ["React", "Vite", "JavaScript", "Tailwind CSS"],
+    "github": "https://github.com/juanavilestech/TECNO-Reparaciones",
+    "demo": "https://tecno-reparaciones.vercel.app"
+  },
+  {
+    "id": "sorteo-expo-agro",
+    "name": "Sorteo Expo Agro",
+    "description": "Event Sweepstakes System developed for Puerto San Nicolás. Manages daily prize draws with a randomization algorithm.",
+    "tech": ["PHP", "MySQL", "Bootstrap"],
+    "github": "https://github.com/juanavilestech/Puerto-San-Nicolas-Sorteo-ExpoAgro",
+    "image": "https://raw.githubusercontent.com/juanavilestech/Puerto-San-Nicolas-Sorteo-ExpoAgro/main/Puerto-sorteo.png"
+  },
+  {
+    "id": "ia-texto-sentimiento",
+    "name": "IA Sentiment Analyzer",
+    "description": "A web tool that uses Artificial Intelligence to analyze the sentiment (positive/negative) of text phrases.",
+    "tech": ["React", "FastAPI", "Hugging Face Transformers"],
+    "github": "https://github.com/juanavilestech/IA-texto-sentimiento"
+  },
+  {
+    "id": "gastos-app-ia",
+    "name": "Gastos App + IA",
+    "description": "Financial management app that includes automatic analysis of spending patterns using AI.",
+    "tech": ["React", "Node.js", "Python"],
+    "github": "https://github.com/juanavilestech/Gastos-App-IA"
+  },
+  {
+    "id": "todo-app-full-stack",
+    "name": "Todo App Full Stack",
+    "description": "A robust MERN application with a responsive UI and full database integration.",
+    "tech": ["MongoDB", "Express.js", "React", "Node.js"],
+    "github": "https://github.com/juanavilestech/Todo-App-Full-Stack"
+  }
+]

@@ -1,0 +1,12 @@
+{
+  "name": "Juan Aviles",
+  "title": "Full Stack Developer & AI Enthusiast",
+  "location": "Argentina",
+  "bio": "Tech enthusiast, technical support, developer, and AI passionate. I specialize in building robust web applications and integrating AI to solve real-world problems.",
+  "aboutMe": "I am a dedicated developer with experience in both frontend and backend technologies. My journey in tech spans from providing technical support to building complex systems like IT management dashboards and AI-powered financial tools. I love exploring new technologies and am always looking for ways to improve user experiences through clean code and efficient architectures.",
+  "contact": {
+    "email": "juan.aviles@example.com",
+    "github": "https://github.com/juanavilestech",
+    "linkedin": "https://linkedin.com/in/juanavilestech"
+  }
+}
