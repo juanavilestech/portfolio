@@ -22,7 +22,7 @@ const Projects = () => {
   }, []);
 
   if (loading)
-    return <div className="text-center py-20">Loading projects...</div>;
+    return <div className="text-center py-20">Cargando proyectos...</div>;
 
   return (
     <section
@@ -31,7 +31,7 @@ const Projects = () => {
     >
       <div className="container mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-3xl font-bold mb-4">Featured Projects</h2>
+          <h2 className="text-3xl font-bold mb-4">Proyectos Destacados</h2>
           <div className="w-20 h-1 bg-primary-600 mx-auto"></div>
         </div>
 

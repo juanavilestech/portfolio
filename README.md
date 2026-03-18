@@ -1,35 +1,35 @@
-# Professional Developer Portfolio
+# Portfolio Profesional de Desarrollador
 
-This project is a modern, high-performance developer portfolio built with React, Node.js, and Express. It automatically extracts and enriches project data from GitHub to showcase a real-time technical profile.
+Este proyecto es un portfolio moderno y de alto rendimiento construido con React, Node.js y Express. Extrae y enriquece automáticamente datos de proyectos desde GitHub para mostrar un perfil técnico actualizado en tiempo real.
 
-## Features
+## Características
 
-- **Modern UI/UX**: Built with React and Tailwind CSS.
-- **Dynamic Projects**: Fetches real repositories from GitHub and enriches them with custom metadata.
-- **Micro-animations**: Smooth transitions using Framer Motion.
-- **Dark Mode**: Responsive design with a native dark/light theme toggle.
-- **Docker Ready**: Pre-configured for containerized deployment.
-- **SEO Optimized**: Semantic HTML and optimized structure.
+- **UI/UX Moderna**: Construido con React y Tailwind CSS.
+- **Proyectos Dinámicos**: Obtiene repositorios reales de GitHub y los enriquece con metadatos personalizados.
+- **Micro-animaciones**: Transiciones fluidas usando Framer Motion.
+- **Modo Oscuro**: Diseño responsivo con un botón nativo de cambio de tema claro/oscuro.
+- **Listo para Docker**: Pre-configurado para despliegue en contenedores.
+- **Optimizado para SEO**: HTML semántico y estructura optimizada.
 
-## Tech Stack
+## Stack Tecnológico
 
 - **Frontend**: React, Vite, Tailwind CSS, Framer Motion, Lucide Icons.
 - **Backend**: Node.js, Express, Axios.
-- **Infrastructure**: Docker, Docker Compose.
+- **Infraestructura**: Docker, Docker Compose.
 
-## Getting Started
+## Empezando
 
-### Local Development
+### Desarrollo Local
 
-1. **Clone the repository**
-2. **Install dependencies**:
+1. **Clonar el repositorio**
+2. **Instalar dependencias**:
    ```bash
-   # In frontend folder
+   # En la carpeta frontend
    npm install
-   # In backend folder
+   # En la carpeta backend
    npm install
    ```
-3. **Run the services**:
+3. **Ejecutar los servicios**:
    ```bash
    # Backend
    cd backend && npm run dev
@@ -39,15 +39,15 @@ This project is a modern, high-performance developer portfolio built with React,
 
 ### Docker
 
-Run the entire stack with a single command:
+Ejecuta todo el stack con un solo comando:
 
 ```bash
 docker-compose up --build
 ```
 
-## Project Structure
+## Estructura del Proyecto
 
-- `/frontend`: React application.
-- `/backend`: Express API service.
-- `/content`: Static content and project database.
-- `/infra`: Deployment configurations.
+- `/frontend`: Aplicación en React.
+- `/backend`: Servicio de API express.
+- `/content`: Contenido estático y base de datos de proyectos.
+- `/infra`: Configuraciones de despliegue.

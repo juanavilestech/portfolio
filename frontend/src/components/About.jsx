@@ -11,18 +11,8 @@ const About = () => {
     },
     {
       label: "Proyectos",
-      value: "15+",
+      value: "+10",
       icon: <Code className="text-primary-500" />,
-    },
-    {
-      label: "Clientes",
-      value: "10+",
-      icon: <User className="text-primary-500" />,
-    },
-    {
-      label: "Tecnologías",
-      value: "20+",
-      icon: <Brain className="text-primary-500" />,
     },
   ];
 

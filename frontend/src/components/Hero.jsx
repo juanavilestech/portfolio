@@ -88,39 +88,15 @@ const Hero = () => {
         </div>
 
         <div className="md:w-1/2 relative flex justify-center mt-16 md:mt-0">
-          <motion.div
-            initial={{ scale: 0.8, opacity: 0 }}
-            animate={{ scale: 1, opacity: 1 }}
-            transition={{ duration: 1 }}
-            className="relative"
-          >
-            {/* Animated Ring */}
-            <div className="absolute -inset-4 border-2 border-dashed border-primary-500/20 rounded-[2.5rem] animate-[spin_20s_linear_infinite]" />
-
-            <div className="floating relative z-10">
+          <div className="relative">
+            <div className="relative z-10">
               <img
                 src="https://avatars.githubusercontent.com/u/104192667?v=4"
                 alt="Juan Aviles"
                 className="w-72 h-72 md:w-96 md:h-96 rounded-[2rem] object-cover glass p-3 ring-1 ring-white/10"
               />
-
-              {/* Tech Badges Floating */}
-              <motion.div
-                animate={{ y: [0, -10, 0] }}
-                transition={{
-                  duration: 4,
-                  repeat: Infinity,
-                  ease: "easeInOut",
-                }}
-                className="absolute -top-6 -right-6 glass p-4 rounded-2xl shadow-2xl"
-              >
-                <div className="text-primary-500 font-bold">3+ Años</div>
-                <div className="text-[10px] uppercase tracking-wider opacity-60">
-                  Experiencia
-                </div>
-              </motion.div>
             </div>
-          </motion.div>
+          </div>
         </div>
       </div>
     </section>
