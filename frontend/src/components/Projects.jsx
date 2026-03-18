@@ -1,28 +1,32 @@
-import React, { useState, useEffect } from "react";
-import axios from "axios";
+import React from "react";
 import { motion } from "framer-motion";
-import { ExternalLink, Github, Star } from "lucide-react";
+import { Globe, Github, Star } from "lucide-react";
+import expoagroImg from "../../img/expoagro.png";
+import rentandgoImg from "../../img/rentandgo.png";
 
 const Projects = () => {
-  const [projects, setProjects] = useState([]);
-  const [loading, setLoading] = useState(true);
-
-  useEffect(() => {
-    const fetchProjects = async () => {
-      try {
-        const response = await axios.get("http://localhost:5000/api/projects");
-        setProjects(response.data);
-      } catch (error) {
-        console.error("Error fetching projects:", error);
-      } finally {
-        setLoading(false);
-      }
-    };
-    fetchProjects();
-  }, []);
-
-  if (loading)
-    return <div className="text-center py-20">Cargando proyectos...</div>;
+  const projects = [
+    {
+      id: 1,
+      name: "Puerto San Nicolás - Sorteo ExpoAgro",
+      description: "Sistema de sorteo interactivo desarrollado para el stand del Puerto San Nicolás en la ExpoAgro.",
+      image: expoagroImg,
+      github: "https://github.com/juanavilestech/Puerto-San-Nicolas-Sorteo-ExpoAgro",
+      demo: "https://puertosannicolas.com/expo/",
+      tech: ["React", "JavaScript", "Tailwind CSS"],
+      stars: 0
+    },
+    {
+      id: 2,
+      name: "Rent and Go",
+      description: "Plataforma web integral para gestión rápida, reserva y alquiler de vehículos en línea.",
+      image: rentandgoImg,
+      github: "https://github.com/juanavilestech/rent-and-go",
+      demo: "https://rentandgo.com.ar/",
+      tech: ["React", "Node.js", "Express"],
+      stars: 0
+    }
+  ];
 
   return (
     <section
@@ -35,7 +39,7 @@ const Projects = () => {
           <div className="w-20 h-1 bg-primary-600 mx-auto"></div>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
           {projects.map((project, index) => (
             <motion.div
               key={project.id}
@@ -45,7 +49,7 @@ const Projects = () => {
               transition={{ delay: index * 0.1 }}
               className="glass rounded-2xl overflow-hidden group hover:shadow-2xl transition-all duration-500"
             >
-              <div className="relative h-48 overflow-hidden">
+              <div className="relative h-56 overflow-hidden">
                 <img
                   src={
                     project.image ||
@@ -54,27 +58,27 @@ const Projects = () => {
                   alt={project.name}
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4">
-                  <div className="flex space-x-4">
-                    {project.github && (
-                      <a
-                        href={project.github}
-                        target="_blank"
-                        className="text-white hover:text-primary-400"
-                      >
-                        <Github size={20} />
-                      </a>
-                    )}
-                    {project.demo && (
-                      <a
-                        href={project.demo}
-                        target="_blank"
-                        className="text-white hover:text-primary-400"
-                      >
-                        <ExternalLink size={20} />
-                      </a>
-                    )}
-                  </div>
+                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center space-x-6 backdrop-blur-[2px]">
+                  {project.github && (
+                    <a
+                      href={project.github}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="p-3 bg-white/10 backdrop-blur-md rounded-full text-white hover:text-primary-400 hover:bg-white/20 transition-all hover:-translate-y-1"
+                    >
+                      <Github size={24} />
+                    </a>
+                  )}
+                  {project.demo && (
+                    <a
+                      href={project.demo}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="p-3 bg-white/10 backdrop-blur-md rounded-full text-white hover:text-primary-400 hover:bg-white/20 transition-all hover:-translate-y-1"
+                    >
+                      <Globe size={24} />
+                    </a>
+                  )}
                 </div>
               </div>
 

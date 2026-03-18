@@ -30,17 +30,16 @@ const Contact = () => {
       <div className="container mx-auto">
         <div className="max-w-4xl mx-auto glass p-8 md:p-12 rounded-3xl">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold mb-4">Get In Touch</h2>
+            <h2 className="text-3xl font-bold mb-4">Mantenernos en contacto</h2>
             <p className="text-slate-600 dark:text-slate-400">
-              Have a project in mind or just want to say hi? Feel free to reach
-              out!
+              ¿Tienes un proyecto en mente o solo quieres saludar? ¡No dudes en escribirme!
             </p>
           </div>
 
           <form onSubmit={handleSubmit} className="grid md:grid-cols-2 gap-6">
             <div className="space-y-6">
               <div>
-                <label className="block text-sm font-medium mb-2">Name</label>
+                <label className="block text-sm font-medium mb-2">Nombre</label>
                 <input
                   type="text"
                   required
@@ -49,11 +48,11 @@ const Contact = () => {
                     setFormData({ ...formData, name: e.target.value })
                   }
                   className="w-full bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-xl px-4 py-3 focus:ring-2 focus:ring-primary-500 outline-none transition-all"
-                  placeholder="Your Name"
+                  placeholder="Tu Nombre"
                 />
               </div>
               <div>
-                <label className="block text-sm font-medium mb-2">Email</label>
+                <label className="block text-sm font-medium mb-2">Correo Electrónico</label>
                 <input
                   type="email"
                   required
@@ -62,13 +61,13 @@ const Contact = () => {
                     setFormData({ ...formData, email: e.target.value })
                   }
                   className="w-full bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-xl px-4 py-3 focus:ring-2 focus:ring-primary-500 outline-none transition-all"
-                  placeholder="your@email.com"
+                  placeholder="tu@email.com"
                 />
               </div>
             </div>
 
             <div className="flex flex-col">
-              <label className="block text-sm font-medium mb-2">Message</label>
+              <label className="block text-sm font-medium mb-2">Mensaje</label>
               <textarea
                 required
                 rows="5"
@@ -77,7 +76,7 @@ const Contact = () => {
                   setFormData({ ...formData, message: e.target.value })
                 }
                 className="w-full flex-grow bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-xl px-4 py-3 focus:ring-2 focus:ring-primary-500 outline-none transition-all resize-none"
-                placeholder="How can I help you?"
+                placeholder="¿Cómo puedo ayudarte?"
               />
             </div>
 
@@ -90,13 +89,13 @@ const Contact = () => {
                 {status === "success" ? (
                   <>
                     <CheckCircle size={20} />
-                    <span>Message Sent!</span>
+                    <span>¡Mensaje Enviado!</span>
                   </>
                 ) : (
                   <>
                     <Send size={20} />
                     <span>
-                      {status === "sending" ? "Sending..." : "Send Message"}
+                      {status === "sending" ? "Enviando..." : "Enviar Mensaje"}
                     </span>
                   </>
                 )}
@@ -104,7 +103,7 @@ const Contact = () => {
             </div>
             {status === "error" && (
               <p className="md:col-span-2 text-center text-red-500 mt-4">
-                Something went wrong. Please try again.
+                Algo salió mal. Por favor, inténtalo de nuevo.
               </p>
             )}
           </form>

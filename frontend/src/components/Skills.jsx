@@ -18,7 +18,7 @@ const Skills = () => {
     {
       title: "Frontend",
       icon: <Layout className="text-blue-500" />,
-      skills: ["React", "Next.js", "Vite", "Tailwind CSS", "Framer Motion"],
+      skills: ["React", "Vite", "Tailwind CSS"],
     },
     {
       title: "Backend",
@@ -26,19 +26,19 @@ const Skills = () => {
       skills: ["Node.js", "Express", "FastAPI", "Python", "PHP"],
     },
     {
-      title: "Database & Tools",
+      title: "Bases de Datos & Herramientas",
       icon: <Database className="text-purple-500" />,
-      skills: ["PostgreSQL", "MongoDB", "MySQL", "Prisma ORM", "Docker"],
+      skills: ["PostgreSQL", "MongoDB", "MySQL", "Prisma", "Docker"],
     },
     {
-      title: "AI & Others",
+      title: "IA & Otros",
       icon: <Cpu className="text-amber-500" />,
       skills: [
         "Hugging Face",
-        "AI Integration",
-        "Automation",
+        "Integración IA",
+        "Automatización",
         "SEO",
-        "Technical Support",
+        "Soporte Técnico",
       ],
     },
   ];
@@ -47,7 +47,7 @@ const Skills = () => {
     <section id="skills" className="py-20 px-6">
       <div className="container mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-3xl font-bold mb-4">My Skills</h2>
+          <h2 className="text-3xl font-bold mb-4">Mis Habilidades</h2>
           <div className="w-20 h-1 bg-primary-600 mx-auto"></div>
         </div>
 

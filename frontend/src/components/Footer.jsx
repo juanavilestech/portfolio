@@ -8,10 +8,10 @@ const Footer = () => {
         <div className="flex flex-col md:flex-row justify-between items-center">
           <div className="mb-6 md:mb-0">
             <a href="#home" className="text-2xl font-bold gradient-text">
-              JA.dev
+              Juan Aviles Tech
             </a>
             <p className="mt-2 text-slate-500 text-sm">
-              © {new Date().getFullYear()} Juan Aviles. All rights reserved.
+              © {new Date().getFullYear()} Juan Aviles Tech. All rights reserved.
             </p>
           </div>
 
@@ -23,14 +23,14 @@ const Footer = () => {
             >
               <Github size={20} />
             </a>
-            <a href="#" className="hover:text-primary-500 transition-colors">
+            <a href="https://www.linkedin.com/in/juan-aviles-tech/" target="_blank" className="hover:text-primary-500 transition-colors">
               <Linkedin size={20} />
             </a>
-            <a href="#" className="hover:text-primary-500 transition-colors">
+            <a href="https://x.com/juanavilestech" target="_blank" className="hover:text-primary-500 transition-colors">
               <Twitter size={20} />
             </a>
             <a
-              href="mailto:juan.aviles@example.com"
+              href="mailto:juanavilestech@gmail.com"
               className="hover:text-primary-500 transition-colors"
             >
               <Mail size={20} />
