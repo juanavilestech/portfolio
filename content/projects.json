@@ -4,7 +4,7 @@
     "name": "Control IT",
     "description": "IT Service Management System. Features a real-time dashboard, inventory control, and user authentication.",
     "tech": ["React", "Node.js", "Express", "Prisma ORM", "SQLite"],
-    "github": "https://github.com/juanavilestech/Control-IT",
+    "github": "https://github.com/juanavilestech/controlit",
     "demo": "https://control-it.vercel.app",
     "image": "https://raw.githubusercontent.com/juanavilestech/Control-IT/main/screenshot.png"
   },

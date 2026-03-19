@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState } from "react"; // Final version with Control IT card
 import { motion, AnimatePresence } from "framer-motion";
 import { Globe, Github, Star, X, Info } from "lucide-react";
 import expoagroImg from "../../img/expoagro.png";
