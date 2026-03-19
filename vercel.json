@@ -15,7 +15,7 @@
   ],
   "functions": {
     "api/index.js": {
-      "includeFiles": "backend/**"
+      "includeFiles": "{api,content}/**"
     }
   }
 }

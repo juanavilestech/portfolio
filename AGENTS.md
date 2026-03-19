@@ -7,10 +7,10 @@ Portfolio profesional de desarrollador enfocado en:
 - AI Integrations
 
 Stack principal:
-- Frontend: React / Next.js
-- Backend: Node.js / Express
-- Database: PostgreSQL
-- Deploy: Docker + CI/CD
+- Frontend: React / Vite
+- Backend: Node.js / Express (Vercel Functions)
+- Content: JSON based
+- Deploy: Vercel
 
 Objetivo:
 Crear un portfolio moderno, rápido y optimizado para SEO que muestre proyectos, habilidades y casos reales.
@@ -32,11 +32,9 @@ Tareas:
 
 Carpetas:
 - /frontend
-- /components
-- /styles
 
 Tecnologías:
-React / Next.js
+React / Vite
 Tailwind
 Framer Motion
 Las habilidades usar skills de ui
@@ -49,20 +47,16 @@ Construir API y lógica del sistema.
 
 Tareas:
 - API REST
-- Endpoint de contacto
-- Gestión de proyectos
-- Analytics básico
+- Endpoint de contacto (Resend)
+- Gestión de metadatos de proyectos (GitHub API)
 - Integraciones externas
 
 Carpetas:
-- /backend
 - /api
-- /services
 
 Tecnologías:
 Node.js
-Express
-PostgreSQL
+Express (Serverless)
 
 ---
 
@@ -74,35 +68,19 @@ Tareas:
 - Descripción de proyectos
 - SEO técnico
 - Metadata
-- Blog técnico
-- Keywords
 
 Carpetas:
 - /content
-- /blog
-- /seo
 
 ---
 
 ## 4. DevOps Agent
 Responsabilidad:
-Automatizar build y deploy.
+Gestionar el despliegue y performance.
 
 Tareas:
-- Configuración Docker
-- CI/CD
-- Deploy automático
-- Performance
-
-Carpetas:
-- /infra
-- /deploy
-- /.github
-
-Tecnologías:
-Docker
-GitHub Actions
-Vercel / Cloudflare
+- Configuración Vercel
+- Monitoreo básico
 
 ---
 
@@ -113,20 +91,18 @@ Mantener calidad del código.
 Tareas:
 - Refactorización
 - Code review
-- Testing
-- Estándares de código
+- Linting
 
 Herramientas:
 ESLint
 Prettier
-Jest
 
 ---
 
 ## Workflow
 
-1. Backend Agent crea APIs
-2. Frontend Agent consume APIs
-3. Content Agent agrega contenido
-4. DevOps Agent despliega cambios
+1. Backend Agent crea APIs en /api
+2. Frontend Agent consume APIs desde /frontend
+3. Content Agent agrega contenido en /content
+4. DevOps Agent gestiona Vercel
 5. Code Quality Agent revisa calidad
