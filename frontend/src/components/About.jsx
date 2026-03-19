@@ -29,15 +29,15 @@ const About = () => {
                 Inteligencia Artificial para resolver desafíos del mundo real.
               </p>
               <p>
-                Mi viaje comenzó con curiosidad por cómo funcionan los
-                sistemas digitales, lo que evolucionó hacia una carrera
-                creando arquitecturas backend robustas y experiencias frontend
-                encantadoras. Creo en el código limpio, el diseño centrado en
-                el rendimiento y el aprendizaje continuo.
+                Mi viaje comenzó con curiosidad por cómo funcionan los sistemas
+                digitales, lo que evolucionó hacia una carrera creando
+                arquitecturas backend robustas y experiencias frontend
+                encantadoras. Creo en el código limpio, el diseño centrado en el
+                rendimiento y el aprendizaje continuo.
               </p>
             </div>
 
-            <div className="mt-10 flex flex-wrap gap-4">
+            <div className="mt-10 flex flex-wrap gap-4 justify-center">
               <div className="glass px-6 py-4 rounded-2xl flex items-center space-x-3 border-l-4 border-l-primary-500">
                 <div className="w-12 h-12 rounded-full bg-primary-100 dark:bg-primary-900/40 flex items-center justify-center">
                   <Code size={20} className="text-primary-600" />

@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { Github, Linkedin, Mail, ArrowRight } from "lucide-react";
+import { Github, Linkedin, Mail, Instagram, ArrowRight } from "lucide-react";
 import ParticlesBackground from "./ParticlesBackground";
 
 const Hero = () => {
@@ -31,7 +31,8 @@ const Hero = () => {
           transition={{ duration: 0.6 }}
           className="text-6xl md:text-8xl font-extrabold mb-6 leading-[1.1]"
         >
-          Juan Aviles <br className="md:hidden" /> <span className="gradient-text">Tech</span>
+          Juan Aviles <br className="md:hidden" />{" "}
+          <span className="gradient-text">Tech</span>
         </motion.h1>
 
         <motion.p
@@ -66,7 +67,14 @@ const Hero = () => {
                 icon: <Github size={22} />,
                 href: "https://github.com/juanavilestech",
               },
-              { icon: <Linkedin size={22} />, href: "https://www.linkedin.com/in/juan-aviles-tech/" },
+              {
+                icon: <Linkedin size={22} />,
+                href: "https://www.linkedin.com/in/juan-aviles-tech/",
+              },
+              {
+                icon: <Instagram size={22} />,
+                href: "https://www.instagram.com/juanavilestech",
+              },
               {
                 icon: <Mail size={22} />,
                 href: "mailto:juanavilestech@gmail.com",

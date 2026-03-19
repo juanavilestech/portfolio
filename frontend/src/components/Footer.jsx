@@ -1,5 +1,5 @@
 import React from "react";
-import { Github, Linkedin, Mail, Twitter } from "lucide-react";
+import { Github, Linkedin, Mail, Instagram } from "lucide-react";
 
 const Footer = () => {
   return (
@@ -11,23 +11,35 @@ const Footer = () => {
               Juan Aviles Tech
             </a>
             <p className="mt-2 text-slate-500 text-sm">
-              © {new Date().getFullYear()} Juan Aviles Tech. All rights reserved.
+              © {new Date().getFullYear()} Juan Aviles Tech. All rights
+              reserved.
             </p>
           </div>
 
-          <div className="flex space-x-6">
+          <div className="flex items-center space-x-6">
             <a
               href="https://github.com/juanavilestech"
               target="_blank"
+              rel="noreferrer"
               className="hover:text-primary-500 transition-colors"
             >
               <Github size={20} />
             </a>
-            <a href="https://www.linkedin.com/in/juan-aviles-tech/" target="_blank" className="hover:text-primary-500 transition-colors">
+            <a
+              href="https://www.linkedin.com/in/juan-aviles-tech/"
+              target="_blank"
+              rel="noreferrer"
+              className="hover:text-primary-500 transition-colors"
+            >
               <Linkedin size={20} />
             </a>
-            <a href="https://x.com/juanavilestech" target="_blank" className="hover:text-primary-500 transition-colors">
-              <Twitter size={20} />
+            <a
+              href="https://www.instagram.com/juanavilestech"
+              target="_blank"
+              rel="noreferrer"
+              className="hover:text-primary-500 transition-colors"
+            >
+              <Instagram size={20} />
             </a>
             <a
               href="mailto:juanavilestech@gmail.com"

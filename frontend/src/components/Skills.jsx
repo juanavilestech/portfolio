@@ -26,9 +26,9 @@ const Skills = () => {
       skills: ["Node.js", "Express", "FastAPI", "Python", "PHP"],
     },
     {
-      title: "Bases de Datos & Herramientas",
+      title: "Bases de Datos",
       icon: <Database className="text-purple-500" />,
-      skills: ["PostgreSQL", "MongoDB", "MySQL", "Prisma", "Docker"],
+      skills: ["PostgreSQL", "MongoDB", "MySQL"],
     },
     {
       title: "IA & Otros",

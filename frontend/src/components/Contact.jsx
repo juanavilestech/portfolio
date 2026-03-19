@@ -14,7 +14,7 @@ const Contact = () => {
     e.preventDefault();
     setStatus("sending");
     try {
-      await axios.post("http://localhost:5000/api/contact", formData);
+      await axios.post("/api/contact", formData);
       setStatus("success");
       setFormData({ name: "", email: "", message: "" });
     } catch (error) {
@@ -30,9 +30,10 @@ const Contact = () => {
       <div className="container mx-auto">
         <div className="max-w-4xl mx-auto glass p-8 md:p-12 rounded-3xl">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold mb-4">Mantenernos en contacto</h2>
+            <h2 className="text-3xl font-bold mb-4">Contacto</h2>
             <p className="text-slate-600 dark:text-slate-400">
-              ¿Tienes un proyecto en mente o solo quieres saludar? ¡No dudes en escribirme!
+              ¿Tienes un proyecto en mente o solo quieres saludar? ¡No dudes en
+              escribirme!
             </p>
           </div>
 
@@ -52,7 +53,9 @@ const Contact = () => {
                 />
               </div>
               <div>
-                <label className="block text-sm font-medium mb-2">Correo Electrónico</label>
+                <label className="block text-sm font-medium mb-2">
+                  Correo Electrónico
+                </label>
                 <input
                   type="email"
                   required
